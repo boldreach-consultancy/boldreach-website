@@ -3,7 +3,6 @@ let i = 0;
 let j = 0;
 let currentWord = "";
 let isDeleting = false;
-
 function type() {
     currentWord = words[i];
     if (isDeleting) {
@@ -25,5 +24,4 @@ function type() {
     }
     setTimeout(type, 100);
 }
-
 type();

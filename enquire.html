@@ -25,14 +25,6 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <link rel="Icon" href="./Images/Boldreach-logo/favicon.ico" sizes="64x64" type="image/png">
-    <!-- #fragment remover-->
-    <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        if (window.location.hash) {
-            history.replaceState(null, null, window.location.pathname + window.location.search);
-        }
-    });
-</script>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-160S06Y7HC"></script>
 <script>
@@ -427,6 +419,14 @@
         </div>
     </div>
 </footer>
+  <!-- #fragment remover-->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        if (window.location.hash) {
+            history.replaceState(null, null, window.location.pathname + window.location.search);
+        }
+    });
+</script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="https://smtpjs.com/v3/smtp.js"></script>
 <script src="./form.js"></script>

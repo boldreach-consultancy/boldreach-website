@@ -25,6 +25,14 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <link rel="Icon" href="./Images/Boldreach-logo/favicon.ico" sizes="64x64" type="image/png">
+    <!-- #fragment remover-->
+  <script type="text/javascript">
+    var uri = window.location.toString();
+    if (uri.indexOf("?") > 0) {
+        var clean_uri = uri.substring(0, uri.indexOf("?"));
+        window.history.replaceState({}, document.title, clean_uri);
+    }
+</script>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-160S06Y7HC"></script>
 <script>
@@ -116,10 +124,8 @@
             <h2 class="text-white text-3xl font-extrabold">Interested....</h2>
             <p class="text-sm text-white mt-4">Have some big idea or brand to develop and need help?</p>
         </div>
-
         <div
             class="grid lg:grid-cols-3 items-start gap-4 p-2 shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] rounded-lg mt-12">
-
             <div class="bg-[#011c2b] rounded-lg p-6 h-full max-lg:order-1">
                 <h2 class="text-xl text-white font-bold">Boldreach Consultancy</h2>
                 <p class="text-sm text-white mt-4">Contact Information</p>
@@ -162,7 +168,6 @@
                         </a>
                     </li>
                 </ul>
-
                 <ul class="flex flex-wrap gap-4 mt-16">
                     <li
                         class="bg-gray-800 hover:bg-gray-900 h-10 w-10 rounded-full flex items-center justify-center shrink-0">
@@ -419,14 +424,6 @@
         </div>
     </div>
 </footer>
-  <!-- #fragment remover-->
-  <script type="text/javascript">
-    var uri = window.location.toString();
-    if (uri.indexOf("?") > 0) {
-        var clean_uri = uri.substring(0, uri.indexOf("?"));
-        window.history.replaceState({}, document.title, clean_uri);
-    }
-</script>
 </script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="https://smtpjs.com/v3/smtp.js"></script>

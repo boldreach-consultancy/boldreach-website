@@ -52,30 +52,25 @@
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'G-160S06Y7HC');
     </script>
     <style>
         html {
             scroll-behavior: smooth;
         }
-
         .parallax {
             background-attachment: fixed;
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
         }
-
         .social-icon {
             color: #FFC700;
         }
-
         .social-icon:hover {
             color: #FFF;
         }
     </style>
-
 </head>
 <body style="background-color: #000000;" class="font-[Poppins]">
     <header id="home">
@@ -706,13 +701,23 @@
         </svg>
         <span class="sr-only">Go to top</span>
     </button>
-    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
-    <script src="./script.js"></script>
-    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
-    <script src="./brand.js"></script>
-    <script src="./top.js"></script>
-    <script src="./hash.js"></script>
+<script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+</script> 
+<script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
+<script src="./script.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+<script src="./brand.js"></script>
+<script src="./top.js"></script>
+<script src="./hash.js"></script>
 </body>
 
 </html>
